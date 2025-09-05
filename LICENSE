@@ -1,24 +1,97 @@
-This is free and unencumbered software released into the public domain.
+# FaceVision Pro
 
-Anyone is free to copy, modify, publish, use, compile, sell, or
-distribute this software, either in source code form or as a compiled
-binary, for any purpose, commercial or non-commercial, and by any
-means.
+FaceVision Pro is a **Flask-based AI-powered face and eye detection platform**. It uses **OpenCV** for real-time video processing, facial/eye detection, and image capture. The web interface is styled for a modern look with live stats, capture history, and interactive controls.
 
-In jurisdictions that recognize copyright laws, the author or authors
-of this software dedicate any and all copyright interest in the
-software to the public domain. We make this dedication for the benefit
-of the public at large and to the detriment of our heirs and
-successors. We intend this dedication to be an overt act of
-relinquishment in perpetuity of all present and future rights to this
-software under copyright law.
+---
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
-OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
-ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-OTHER DEALINGS IN THE SOFTWARE.
+## ✨ Features
 
-For more information, please refer to <https://unlicense.org>
+- 🎥 **Live Video Stream** — real-time video feed with bounding boxes around faces and eyes.  
+- 👤 **Face & Eye Detection** — Haar Cascade classifiers track the number of detected faces and eyes.  
+- 📊 **Live Statistics Panel** — displays real-time detection counts.  
+- 📸 **Image Capture** — take snapshots and save them in an uploads gallery.  
+- 🖼 **Capture Gallery** — view captured frames with timestamps.  
+- ⛶ **Fullscreen Mode** — enlarge the video panel for better viewing.  
+- ⌨️ **Keyboard Shortcuts**:  
+  - `S` or `Space` → Start/Pause detection  
+  - `C` → Capture image  
+  - `F` → Toggle fullscreen  
+
+---
+
+## 🛠 Tech Stack
+
+- **Backend**: Flask (Python)  
+- **Frontend**: HTML, CSS, JavaScript  
+- **Computer Vision**: OpenCV (Haar Cascade Classifiers)  
+- **Other**: Threading for concurrency, JSON API for detection stats  
+
+---
+
+## 📂 Project Structure
+
+```
+├── app.py                # Main Flask application
+├── templates/
+│   └── index.html         # Frontend UI
+├── uploads/               # Captured images are saved here
+└── README.md              # Project documentation
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone Repository
+```bash
+git clone https://github.com/yourusername/facevision-pro.git
+cd facevision-pro
+```
+
+### 2. Create Virtual Environment
+```bash
+python -m venv venv
+source venv/bin/activate   # On macOS/Linux
+venv\Scripts\activate      # On Windows
+```
+
+### 3. Install Dependencies
+```bash
+pip install flask opencv-python
+```
+
+### 4. Run the Application
+```bash
+python app.py
+```
+
+### 5. Open in Browser
+Navigate to:
+```
+http://127.0.0.1:5000
+```
+
+---
+
+## 📸 Example Workflow
+
+1. Start the app → live detection begins.  
+2. Watch **faces and eyes** being tracked in real-time.  
+3. Press **Capture Image** to save snapshots.  
+4. Browse them instantly in the **Capture Gallery**.  
+
+---
+
+## ⚡ Notes
+
+- Make sure your webcam is enabled.  
+- Captured images are stored inside the `uploads/` folder.  
+- For production use, disable `debug=True` in `app.py`.  
+
+---
+
+## 🔮 Future Improvements
+
+- Add **deep learning–based detection** (e.g., DNN or Mediapipe).  
+- Enable **multi-camera support**.  
+- Add **user authentication** for private image storage.  
