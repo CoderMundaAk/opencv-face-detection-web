@@ -1,7 +1,4 @@
-Got it 👍 Here’s your README in proper **Markdown (.md)** format:
-
-```markdown
-# FaceVision Pro
+\# FaceVision Pro
 
 FaceVision Pro is a **Flask-based AI-powered face and eye detection platform**. It uses **OpenCV** for real-time video processing, facial/eye detection, and image capture. The web interface is styled for a modern look with live stats, capture history, and interactive controls.
 
@@ -34,14 +31,12 @@ FaceVision Pro is a **Flask-based AI-powered face and eye detection platform**. 
 ## 📂 Project Structure
 
 ```
-
 ├── app.py                # Main Flask application
 ├── templates/
 │   └── index.html         # Frontend UI
 ├── uploads/               # Captured images are saved here
 └── README.md              # Project documentation
-
-````
+```
 
 ---
 
@@ -49,11 +44,11 @@ FaceVision Pro is a **Flask-based AI-powered face and eye detection platform**. 
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/CoderMundaAk/opencv-face-detection-web
-````
+git clone https://github.com/yourusername/facevision-pro.git
+cd facevision-pro
+```
 
 ### 2. Create Virtual Environment
-
 ```bash
 python -m venv venv
 source venv/bin/activate   # On macOS/Linux
@@ -61,21 +56,17 @@ venv\Scripts\activate      # On Windows
 ```
 
 ### 3. Install Dependencies
-
 ```bash
 pip install flask opencv-python
 ```
 
 ### 4. Run the Application
-
 ```bash
 python app.py
 ```
 
 ### 5. Open in Browser
-
 Navigate to:
-
 ```
 http://127.0.0.1:5000
 ```
@@ -84,28 +75,23 @@ http://127.0.0.1:5000
 
 ## 📸 Example Workflow
 
-1. Start the app → live detection begins.
-2. Watch **faces and eyes** being tracked in real-time.
-3. Press **Capture Image** to save snapshots.
-4. Browse them instantly in the **Capture Gallery**.
+1. Start the app → live detection begins.  
+2. Watch **faces and eyes** being tracked in real-time.  
+3. Press **Capture Image** to save snapshots.  
+4. Browse them instantly in the **Capture Gallery**.  
 
 ---
 
 ## ⚡ Notes
 
-* Make sure your webcam is enabled.
-* Captured images are stored inside the `uploads/` folder.
-* For production use, disable `debug=True` in `app.py`.
+- Make sure your webcam is enabled.  
+- Captured images are stored inside the `uploads/` folder.  
+- For production use, disable `debug=True` in `app.py`.  
 
 ---
 
 ## 🔮 Future Improvements
 
-* Add **deep learning–based detection** (e.g., DNN or Mediapipe).
-* Enable **multi-camera support**.
-* Add **user authentication** for private image storage.
-
-```
-
-Do you want me to also drop in **Markdown placeholders for screenshots/GIFs** (like `![screenshot](docs/demo.png)`) so you can just replace them later?
-```
+- Add **deep learning–based detection** (e.g., DNN or Mediapipe).  
+- Enable **multi-camera support**.  
+- Add **user authentication** for private image storage.  
